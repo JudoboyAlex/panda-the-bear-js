@@ -1,3 +1,5 @@
+#Part1
+
 document.querySelector(".profile-image").src = "https://placebear.com/200/300";
 
 document.querySelector("h1").textContent = "Alexander The Great II"
@@ -37,3 +39,28 @@ var list = document.querySelector(".bio-info");
 while (list.hasChildNodes()) {   
 list.removeChild(list.firstChild);
 }
+
+#Part2
+
+list = document.querySelectorAll('.bar-default')
+list[0].parentNode.removeChild(list[2])
+
+var itm = document.querySelector("#right-image img");
+var cln = itm.cloneNode();
+document.querySelector(".portfolio-container").appendChild(cln)
+
+itm = document.querySelector('#right-image img')
+cln = document.querySelector('.portfolio-container')
+for (i=0;i<10;i++){ newImage = drawing.cloneNode(); div.appendChild(newImage); }
+
+
+const listItem = document.createElement('li');
+const leftSpan = document.createElement('span');
+var lastUpdated = document.createTextNode('Page last updated on');
+leftSpan.appendChild(lastUpdated);
+listItem.appendChild(leftSpan);
+document.querySelector(".bio-info").appendChild(listItem);
+const rightSpan = document.createElement('span');
+var lastUpdatedAgain = document.createTextNode('Fri April 2016 03:53:16 GMT-0400(EDT)');
+rightSpan.appendChild(lastUpdatedAgain);
+listItem.appendChild(rightSpan);
